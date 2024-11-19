@@ -17,11 +17,12 @@ import { CategoryName } from '../../layout/navbar/category/category.model';
 import { PriceVO } from '../model/listing-vo.model';
 import { CategoryStepComponent } from "./step/category-step/category-step.component";
 import { FooterStepComponent } from '../../shared/footer-step/footer-step.component';
+import { LocationStepComponent } from './step/location-step/location-step.component';
 
 @Component({
   selector: 'app-properties-create',
   standalone: true,
-  imports: [CategoryStepComponent,FooterStepComponent],
+  imports: [CategoryStepComponent,FooterStepComponent,LocationStepComponent],
   templateUrl: './properties-create.component.html',
   styleUrl: './properties-create.component.scss',
 })

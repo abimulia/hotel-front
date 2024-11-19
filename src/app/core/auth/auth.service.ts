@@ -28,7 +28,6 @@ export class AuthService {
   fetchUser = computed(() => this.fetchUser$());
 
   fetch(forceResync: boolean): void {
-    console.log("forceResync");
     this.fetchHttpUser(forceResync).subscribe({
       next: (user) =>
         this.fetchUser$.set(State.Builder<User>().forSuccess(user)),
@@ -37,7 +36,6 @@ export class AuthService {
           err.status === HttpStatusCode.Unauthorized &&
           this.isAuthenticated()
         ) {
-          console.log("err.status");
           this.fetchUser$.set(
             State.Builder<User>().forSuccess({ email: this.notConnected })
           );
@@ -66,18 +64,14 @@ export class AuthService {
   }
 
   isAuthenticated(): boolean {
-    console.log("isAuthenticated ");
     if (this.fetchUser$().value) {
-      console.log("value: "+this.fetchUser$().value?.email);
       return this.fetchUser$().value!.email !== this.notConnected;
     } else {
-      console.log("false");
       return false;
     }
   }
 
   fetchHttpUser(forceResync: boolean): Observable<User> {
-    console.log("fetchHttpUser()");
     const params = new HttpParams().set('forceResync', forceResync);
     return this.http.get<User>(
       `${environment.API_URL}/auth/get-authenticated-user`,
@@ -86,7 +80,6 @@ export class AuthService {
   }
 
   hasAnyAuthority(authorities: string[] | string): boolean {
-    console.log("hasAnyAuthority()");
     if (this.fetchUser$().value!.email === this.notConnected) {
       return false;
     }
