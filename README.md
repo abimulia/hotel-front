@@ -1,5 +1,5 @@
 # HotelFront
-[![Angular 18.28](https://img.shields.io/badge/JavaScript-Angular-red)]([https://spring.io/](https://github.com/angular/angular-cli))
+[![Angular 18.28](https://img.shields.io/badge/JavaScript-Angular-red)](https://github.com/angular/angular-cli)
 [![License](http://img.shields.io/:license-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
