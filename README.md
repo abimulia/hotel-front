@@ -8,9 +8,11 @@ Code in this project based on the guide to build Airbnb clone on https://www.you
 
 The front end application using Angular, and connect to the back end application created with Spring Boot
 
+[![Backend](http://img.shields.io/:Backend-SpringBoot-green.svg)](https://github.com/abimulia/hotel-back)
+
 ![image](https://github.com/user-attachments/assets/9bfbabd9-0517-41bc-8360-c00a3e51e31f)
 
-[![Backend](https://github.com/abimulia/hotel-back)
+
 
 ## Development server
 
