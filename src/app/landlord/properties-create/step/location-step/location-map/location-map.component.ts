@@ -124,7 +124,6 @@ export class LocationMapComponent {
       (country) => country.cca3 === term
     );
     if (this.currentLocation) {
-      console.log("flag: "+ this.currentLocation.flag + " name: " + this.currentLocation.name.common);
       this.provider!.search({ query: this.currentLocation.name.common }).then(
         (results) => {
           if (results && results.length > 0) {
