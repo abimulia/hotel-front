@@ -1,6 +1,14 @@
 # HotelFront
+[![Angular 18.28](https://img.shields.io/badge/JavaScript-Angular-red)]([https://spring.io/](https://github.com/angular/angular-cli))
+[![License](http://img.shields.io/:license-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0.html)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+
+Code in this project based on the guide to build Airbnb clone on https://www.youtube.com/watch?v=XriUV06Hkow 
+
+The front end application using Angular, and connect to the back end application created with Spring Boot
+
+![image](https://github.com/user-attachments/assets/9bfbabd9-0517-41bc-8360-c00a3e51e31f)
 
 ## Development server
 
