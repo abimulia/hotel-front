@@ -18,6 +18,7 @@
     </div>
     <div
       class="p-toolbar-group-center bg-white border-round-3xl p-0 border-1 border-gray-300 shadow-1 hover:shadow-2 middle-group search flex justify-content-around"
+      (click)="openNewSearch()"
     >
       <button
         class="p-button border-round-left-3xl border-noround-right border-right-none border-none bg-white text-dark focus:shadow-none"
@@ -44,7 +45,9 @@
     </div>
     <div class="p-toolbar-group-end sm:hidden md:flex">
       @if (authService.isAuthenticated()) {
-        <a class="p-button p-button-link" (click)="openNewListing()">Airbnb your home</a>
+      <a class="p-button p-button-link" (click)="openNewListing()"
+        >Airbnb your home</a
+      >
       }
       <p-menu
         #menu
@@ -57,7 +60,10 @@
         class="menu flex align-content-center justify-content-around ml-2 pl-3 p-2 border-gray-300 focus:shadow-none hover:shadow-1 border-round-3xl bg-white p-button"
       >
         <fa-icon [icon]="'bars'" class="text-sm text-dark mr-3"></fa-icon>
-        <app-avatar [imageUrl]="connectedUser.imageUrl" avatarSize="avatar-sm"></app-avatar>
+        <app-avatar
+          [imageUrl]="connectedUser.imageUrl"
+          avatarSize="avatar-sm"
+        ></app-avatar>
       </button>
     </div>
   </p-toolbar>
